@@ -6,18 +6,15 @@ public class TwoSum {
 
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer> res = new HashMap<Integer, Integer>();
-        int[] ans = new int[2];
         for(int i = 0; i < nums.length; i++){
             if (res.containsKey(nums[i])){
-                ans[0] = res.get(nums[i]);
-                ans[1] = i;
-                return ans;
+                return new int[] {res.get(nums[i]), i};
             }
             else{
                 res.put(target-nums[i], i);
             }
         }
-        return ans;
+        throw new IllegalStateException("No pair found for given target.");
     }
 
 
