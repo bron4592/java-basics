@@ -4,6 +4,7 @@ import java.util.*;
 
 import static com.company.frequency.Frequency.countFrequency;
 import static com.company.leetcode.kClosestPoints.kClosestPointsToOrigin;
+import static com.company.leetcode.robotBoundToCircle.robot2Circle;
 public class Main {
 
     public static void main(String[] args) {
@@ -24,19 +25,16 @@ public class Main {
 //        System.out.println(Arrays.toString(names));
 //        Map<String,Integer> freqMap = countFrequency(names);
 //        System.out.println(freqMap);
-        int[][] points = {{3,3},{5,-1},{-2,4}};
-        int k = 2;
-        System.out.println(Arrays.deepToString(kClosestPointsToOrigin(k, points)));
+//        -------------------------------------------------------
+//        int[][] points = {{3,3},{5,-1},{-2,4}};
+//        int k = 2;
+//        System.out.println(Arrays.deepToString(kClosestPointsToOrigin(k, points)));
+//        --------------------------------------------------------
+        String instructions = "GLGRGLGRGLLGGGG";
+        System.out.println(robot2Circle(instructions));
 
     }
-
-    static class car {
-        String make;
-        String model;
-        String licensePlateId;
-        int year;
 
 
 
     }
-}
