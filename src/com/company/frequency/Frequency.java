@@ -17,5 +17,5 @@ public class Frequency {
         }
         return freqMap;
     }
-    
+
 }
