@@ -5,6 +5,8 @@ import java.util.*;
 import static com.company.frequency.Frequency.countFrequency;
 import static com.company.leetcode.kClosestPoints.kClosestPointsToOrigin;
 import static com.company.leetcode.robotBoundToCircle.robot2Circle;
+import static com.company.leetcode.numberOfIslands.countNumberOfIslands;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -30,8 +32,16 @@ public class Main {
 //        int k = 2;
 //        System.out.println(Arrays.deepToString(kClosestPointsToOrigin(k, points)));
 //        --------------------------------------------------------
-        String instructions = "GLGRGLGRGLLGGGG";
-        System.out.println(robot2Circle(instructions));
+//        String instructions = "GLGRGLGRGLLGGGG";
+//        System.out.println(robot2Circle(instructions));
+//        --------------------------------------------------------
+        String[][] grid = {
+                {"1","1","0","0","0"},
+                {"1","1","0","0","0"},
+                {"0","0","1","0","0"},
+                {"0","0","0","1","1"}
+        };
+        System.out.println(countNumberOfIslands(grid));
 
     }
 
